@@ -110,7 +110,7 @@ if (localStorage.getItem('userLog') == null) {
                 }
             }
             function goNextFunction() {
-                if (localStorage.getItem('lastQuestion') < 1) {
+                if (localStorage.getItem('lastQuestion') >= questions.length - 1) {
                     alert('Zaten ilk bulmacadasınız!')
                 }
                 else {
